@@ -62,7 +62,7 @@ def yturl_to_mp3(video_url):
                 print(f"{Fore.YELLOW}Hayır olarak işaretlediniz.\nBaşa döndürülüyor...{Style.RESET_ALL}")
                 sleep(3)
                 system("cls||clear")
-                break  
+                __main__()
             else:
                 system("cls||clear")
                 print(f"{Fore.RED}Geçerli bir seçim yap.{Style.RESET_ALL}")
