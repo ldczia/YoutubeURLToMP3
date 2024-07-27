@@ -53,7 +53,8 @@ def yturl_to_mp3(video_url):
                 system("cls||clear")
                 print(f"{Fore.GREEN}MP3 dosyası oluşturuldu: '{title}.mp3'{Style.RESET_ALL}")
                 print(f"{Fore.CYAN}İndirilen video başlığı: {title}{Style.RESET_ALL}") 
-                break   
+                system("cls||clear")
+                __main__()   
             elif secim == '2':
                 system("cls||clear")
                 print(f"{Fore.YELLOW}Hayır olarak işaretlediniz.\nBaşa döndürülüyor...{Style.RESET_ALL}")
