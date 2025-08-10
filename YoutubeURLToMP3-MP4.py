@@ -8,10 +8,13 @@ from time import sleep
 
 init(autoreset=True)
 
+# YouTube + Shorts destekli regex
 YOUTUBE_URL_REGEX = re.compile(
     r'(https?://)?(www\.)?youtube\.com/watch\?v=[\w-]+'
     r'|'
-    r'(https?://)?(www\.)?youtu\.be/[\w-]+',
+    r'(https?://)?(www\.)?youtu\.be/[\w-]+'
+    r'|'
+    r'(https?://)?(www\.)?youtube\.com/shorts/[\w-]+',
     re.IGNORECASE
 )
 
@@ -159,7 +162,6 @@ def youtube_menu():
         sleep(2)
         system("cls||clear")
         youtube_menu()
-
 
 def __main__():
     print(f""" {Fore.LIGHTCYAN_EX}
